@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3.1fr 7fr;
+    background: #030064ff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-evenly;
+    background: #ededed;
+}
+
+.left>input,
+.left>select,
+#submit {
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+}
+
+#submit {
+    background: #c2c2c2;
+    width: 100%;
+    color: grey;
+    opacity: 0.5;
+    padding: 14px;
+}
+
+.botm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form:valid #submit {
+    background: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    color: white;
+    font-weight: 900;
+    opacity: 1;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right {
+    color: white;
+    overflow-y: scroll;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border: 2px solid coral;
+    border-collapse: collapse;
+}
+
+table,
+th,
+tr,
+td {
+    border: 1px solid #ededed;
+    padding: 8px 0px;
+}
+
+.delbtn,
+.editBtn {
+    padding: 6px;
+    color: white;
+    background: linear-gradient(135deg, #f34079 40%, #fc894d);
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    margin: 7px;
+}
+
+.editBtn {
+    background: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+}
+
+#cancel {
+    padding: 14px;
+    color: white;
+    background: linear-gradient(135deg, #f34079 40%, #fc894d);
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 20px;
+}
